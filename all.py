@@ -1030,6 +1030,8 @@ plt.plot(datas,kaliningrad)
 kaliningrad[4] =  np.mean([kaliningrad[3],kaliningrad[5]])
 print(kaliningrad)
 
+#testepratestar o github
+
 
 
 
