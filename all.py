@@ -981,7 +981,7 @@
     #lista_final = []
     #try:
         #for i in range(len(lista1)):
-            #calculo = round(lista1[i] / lista2[i],1)
+            #calculo = round(lista1[i] v lista2[i],1)
             #lista_final.append(calculo)
     #except ZeroDivisionError:
         #print('Não é possível dividir um número por zero')
@@ -1026,13 +1026,9 @@ moscow_ano2 = moscow[12:24]
 moscow_ano3 = moscow[24:36]
 moscow_ano4 = moscow[36:48]
 
-plt.plot(datas,kaliningrad)
-kaliningrad[4] =  np.mean([kaliningrad[3],kaliningrad[5]])
-print(kaliningrad)
 
-#testepratestar o github
-
-
+plt.plot(datas,moscow)
+plt.show()
 
 
 

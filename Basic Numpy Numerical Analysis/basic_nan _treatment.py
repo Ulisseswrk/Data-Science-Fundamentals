@@ -16,3 +16,15 @@ ekaterinburg = precos[:,4]
 
 kaliningrad[4] =  np.mean([kaliningrad[3],kaliningrad[5]])
 print(kaliningrad)
+
+Y = moscow
+X = datas
+n = np.size(moscow)
+
+#Equação 
+a = (n * np.sum(X*Y) - np.sum(X) * np.sum(Y)) / (n * np.sum(X**2) - np.sum(X)**2)
+b = np.mean(Y) - a * np.mean(X)
+
+y = a*X+b
+
+print(np.linalg.norm(moscow-y))
