@@ -1005,31 +1005,68 @@
 #url = 'https://raw.githubusercontent.com/allanspadini/numpy/dados/citrus.csv'
 #arquivo = np.loadtxt(url,delimiter=',', usecols=np.arange(1,6,1), skiprows=1)
 #print(arquivo)
-import numpy as np
-import matplotlib.pyplot as plt
-
-url = 'https://raw.githubusercontent.com/Marina-Falcao-DEV/apples_ts.csv-Alura-_-Numpy-/refs/heads/main/apples_ts.csv'
-dado = np.loadtxt(url,delimiter=',',usecols=np.arange(1,88,1)) #separa os dados por , e comeca da primeira coluna numeral
-dado_transposto = dado.T
-
-datas = dado_transposto[:, 0] # pega todo o intervalo de linhas anteriores
-precos = dado_transposto[:, 1:6]
-
-moscow = precos[:,0]
-kaliningrad = precos[:,1]
-petersburg = precos[:,2]
-krasnodar = precos[:,3]
-ekaterinburg = precos[:,4]
-
-moscow_ano1 = moscow[0:12]
-moscow_ano2 = moscow[12:24]
-moscow_ano3 = moscow[24:36]
-moscow_ano4 = moscow[36:48]
-
-
-plt.plot(datas,moscow)
-plt.show()
-
+#import numpy as np
+#import matplotlib.pyplot as plt
+#url = 'https://raw.githubusercontent.com/Marina-Falcao-DEV/apples_ts.csv-Alura-_-Numpy-/refs/heads/main/apples_ts.csv'
+#dado = np.loadtxt(url,delimiter=',',usecols=np.arange(1,88,1)) #separa os dados por , e comeca da primeira coluna numeral
+#dado_transposto = dado.T
+#datas = dado_transposto[:, 0] # pega todo o intervalo de linhas anteriores
+#precos = dado_transposto[:, 1:6]
+#moscow = precos[:,0]
+#kaliningrad = precos[:,1]
+#petersburg = precos[:,2]
+#krasnodar = precos[:,3]
+#ekaterinburg = precos[:,4]
+#moscow_ano1 = moscow[0:12]
+#moscow_ano2 = moscow[12:24]
+#moscow_ano3 = moscow[24:36]
+#moscow_ano4 = moscow[36:48]
+#plt.plot(datas,moscow)
+#plt.show()
+#def mostrar(nome,idade):
+    #print(f'Seu nome é {nome} e sua idade é {idade}')
+#nome = (input('Digite o seu nome: '))
+#idade = (input('Digite a sua idade: '))
+#dicionario = {'nome':nome,'idade': idade}
+#mostrar(**dicionario)
+#lista_de_tuplas = []
+#lista_de_imc = []
+#soma = 0
+#atletas = [
+    # ["Maria Silva", 1.75, 65],
+    # ["João Santos", 1.80, 72],
+    # ["Ana Pereira", 1.68, 58],
+    # ["Pedro Oliveira", 1.92, 85],
+    # ["Carlos Lima", 1.85, 78],
+    # ["Beatriz Souza", 1.70, 60],
+    # ["Fernanda Costa", 1.62, 55],
+    # ["Lucas Almeida", 1.88, 82],
+    # ["Rafaela Gomes", 1.74, 63],
+    # ["Gustavo Ferreira", 1.90, 88],
+    # ["Larissa Rocha", 1.66, 57],
+    # ["Henrique Nunes", 1.83, 76],
+    # ["Juliana Martins", 1.72, 59],
+    # ["Ricardo Carvalho", 1.86, 80],
+    # ["Sofia Alves", 1.64, 54],
+    # ["Matheus Ribeiro", 1.89, 84],
+    # ["Camila Duarte", 1.69, 61],
+    # ["Gabriel Monteiro", 1.77, 73],
+    # ["Eduarda Farias", 1.71, 62],
+    # ["Thiago Mendes", 1.84, 79],
+#]
+#for x in atletas:
+#    nome = x[0]
+#    altura = x[1]
+#    peso = x[2]
+#    imc = round(peso / altura ** 2, 2)
+#    alturas = [i[1] for i in atletas]
+#    lista_de_tuplas.append((nome, altura, peso))
+#    lista_de_imc.append((nome,imc))
+#maiores_imc = [i for i in lista_de_imc if i[1] > 23.5]
+#media_alturas = round(sum(alturas) / len(lista_de_tuplas),2)
+#print(f'As pessoas com o imc maior que 23.5 são:')
+#for nome,imc in maiores_imc:
+#    print(f'{nome}, IMC: {imc}')
 
 
 
