@@ -15,15 +15,14 @@ All exercises, notes, and references are kept inside their respective folders to
 - **Basic Python For Data Science**  
   Introductory exercises in Python, focusing on essential programming concepts used in Data Science, such as data types, control structures, functions, and basic data manipulation.
 
-- **Basic Numpy Numerical Analysis**  
-  Hands-on practice with NumPy for baSIC numerical computations and array operations
-  
 - **Python For Data Science 2**  
   Continuation of Python-focused content for Data Science. It includes more complex structures and external libraries
 
-- **all.py**  
-  A script created to store all exercises in a single file, separated by hashtags.  
-  Its purpose is to track the number of lines written by a beginner programmer on their journey toward a professional level.
+- **Basic Numpy Numerical Analysis**  
+  Hands-on practice with NumPy for baSIC numerical computations and array operations
+  
+- **Practicing Python and Data Structure**  
+  Exercises about Data Sturcture, more specifically, all of the thing i learned on Pyhton For Data Science 2, just to train.
 
 ---
 
