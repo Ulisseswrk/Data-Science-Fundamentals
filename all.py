@@ -1023,66 +1023,6 @@
 #moscow_ano4 = moscow[36:48]
 #plt.plot(datas,moscow)
 #plt.show()
-#def mostrar(nome,idade):
-    #print(f'Seu nome é {nome} e sua idade é {idade}')
-#nome = (input('Digite o seu nome: '))
-#idade = (input('Digite a sua idade: '))
-#dicionario = {'nome':nome,'idade': idade}
-#mostrar(**dicionario)
-#lista_de_tuplas = []
-#lista_de_imc = []
-#soma = 0
-#atletas = [
-    # ["Maria Silva", 1.75, 65],
-    # ["João Santos", 1.80, 72],
-    # ["Ana Pereira", 1.68, 58],
-    # ["Pedro Oliveira", 1.92, 85],
-    # ["Carlos Lima", 1.85, 78],
-    # ["Beatriz Souza", 1.70, 60],
-    # ["Fernanda Costa", 1.62, 55],
-    # ["Lucas Almeida", 1.88, 82],
-    # ["Rafaela Gomes", 1.74, 63],
-    # ["Gustavo Ferreira", 1.90, 88],
-    # ["Larissa Rocha", 1.66, 57],
-    # ["Henrique Nunes", 1.83, 76],
-    # ["Juliana Martins", 1.72, 59],
-    # ["Ricardo Carvalho", 1.86, 80],
-    # ["Sofia Alves", 1.64, 54],
-    # ["Matheus Ribeiro", 1.89, 84],
-    # ["Camila Duarte", 1.69, 61],
-    # ["Gabriel Monteiro", 1.77, 73],
-    # ["Eduarda Farias", 1.71, 62],
-    # ["Thiago Mendes", 1.84, 79],
-#]
-#for x in atletas:
-#    nome = x[0]
-#    altura = x[1]
-#    peso = x[2]
-#    imc = round(peso / altura ** 2, 2)
-#    alturas = [i[1] for i in atletas]
-#    lista_de_tuplas.append((nome, altura, peso))
-#    lista_de_imc.append((nome,imc))
-#maiores_imc = [i for i in lista_de_imc if i[1] > 23.5]
-#media_alturas = round(sum(alturas) / len(lista_de_tuplas),2)
-#print(f'As pessoas com o imc maior que 23.5 são:')
-#for nome,imc in maiores_imc:
-#    print(f'{nome}, IMC: {imc}')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #datas = np.arange(1,88,1)
 #plt.plot(datas, precos[:,0])
 #plt.title('Gráfico de aumento dos preços')
@@ -1097,183 +1037,122 @@
 #plt.legend(['Ano 1','Ano 2','Ano 3','Ano 4'])
 #plt.xlabel('Meses')
 #plt.ylabel('Preco')
+#def mostrar(nome,idade):
+    #print(f'Seu nome é {nome} e sua idade é {idade}')
+#nome = (input('Digite o seu nome: '))
+#idade = (input('Digite a sua idade: '))
+#dicionario = {'nome':nome,'idade': idade}
+#mostrar(**dicionario)
+# lista_de_tuplas = []
+# lista_de_imc = []
+# soma = 0
+# atletas = [
+#     ["Maria Silva", 1.75, 65],
+#     ["João Santos", 1.80, 72],
+#     ["Ana Pereira", 1.68, 58],
+#     ["Pedro Oliveira", 1.92, 85],
+#     ["Carlos Lima", 1.85, 78],
+#     ["Beatriz Souza", 1.70, 60],
+#     ["Fernanda Costa", 1.62, 55],
+#     ["Lucas Almeida", 1.88, 82],
+#     ["Rafaela Gomes", 1.74, 63],
+#     ["Gustavo Ferreira", 1.90, 88],
+#     ["Larissa Rocha", 1.66, 57],
+#     ["Henrique Nunes", 1.83, 76],
+#     ["Juliana Martins", 1.72, 59],
+#     ["Ricardo Carvalho", 1.86, 80],
+#     ["Sofia Alves", 1.64, 54],
+#     ["Matheus Ribeiro", 1.89, 84],
+#     ["Camila Duarte", 1.69, 61],
+#     ["Gabriel Monteiro", 1.77, 73],
+#     ["Eduarda Farias", 1.71, 62],
+#     ["Thiago Mendes", 1.84, 79],
+# ]
+# for x in atletas:
+#     nome = x[0]
+#     altura = x[1]
+#     peso = x[2]
+#     imc = round(peso / altura ** 2, 2)
+#     alturas = [i[1] for i in atletas]
+#     lista_de_tuplas.append((nome, altura, peso))
+#     lista_de_imc.append((nome,imc))
+# media_alturas = round(sum(alturas) / len(lista_de_tuplas),2)
+# maiores_imc = [i[0] for i in lista_de_imc if i[1] > 23.5]
+# lista_obesos = [(i[0],'Obeso') if i[1] > 23 else (i[0],'Saudável') for i in lista_de_imc]
+# print(f'As pessoas com o imc maior que 23.5 são:')
+# for nome, condicao in lista_obesos:
+#     print(f'{nome} {condicao}')
+# livros = [
+#     ("Dom Quixote", 1605),
+#     ("Orgulho e Preconceito", 1813),
+#     ("O Grande Gatsby", 1925),
+#     ("Cem Anos de Solidão", 1967),
+#     ("1984", 1949),
+#     ("Harry Potter e a Pedra Filosofal", 1997),
+#     ("O Senhor dos Anéis", 1954),
+#     ("A Revolução dos Bichos", 1945),
+#     ("O Apanhador no Campo de Centeio", 1951),
+#     ("O Código Da Vinci", 2003),
+#     ("Jogos Vorazes", 2008),
+#     ("A Culpa é das Estrelas", 2012),
+#     ("Duna", 1965),
+#     ("A Menina que Roubava Livros", 2005),
+#     ("O Hobbit", 1937),
+#     ("Moby Dick", 1851),
+#     ("Drácula", 1897),
+#     ("Frankenstein", 1818),
+#     ("A Odisséia", -800),  # Ano fictício para livros clássicos antigos
+#     ("Hamlet", 1600),
+# ]
+# id_classicos = [(i[0],"Moderno") if i[1] >= 2000 else (i[0],"Clássico") for i in livros]
+# for nome, idade in id_classicos:
+#     print(f"{nome}: {idade}")
+# livros = [
+#     ("Dom Quixote", "Miguel de Cervantes", 1605),
+#     ("Orgulho e Preconceito", "Jane Austen", 1813),
+#     ("O Grande Gatsby", "F. Scott Fitzgerald", 1925),
+#     ("Cem Anos de Solidão", "Gabriel García Márquez", 1967),
+#     ("1984", "George Orwell", 1949),
+#     ("Harry Potter e a Pedra Filosofal", "J.K. Rowling", 1997),
+#     ("O Senhor dos Anéis", "J.R.R. Tolkien", 1954),
+#     ("A Revolução dos Bichos", "George Orwell", 1945),
+#     ("O Apanhador no Campo de Centeio", "J.D. Salinger", 1951),
+#     ("O Código Da Vinci", "Dan Brown", 2003),
+# ]
+# autor = {}
+# catalogo = {i[0]: {"autor":i[1], "ano":i[2]} for i in livros}
+# livros_antigos = {titulo:info for titulo,info in catalogo.items() if info["ano"] < 1950}
+# print(livros_antigos)
+# catalogo = {
+#     "Dom Quixote": {"autor": "Miguel de Cervantes", "ano": 1605},
+#     "Orgulho e Preconceito": {"autor": "Jane Austen", "ano": 1813},
+#     "O Grande Gatsby": {"autor": "F. Scott Fitzgerald", "ano": 1925},
+#     "Cem Anos de Solidão": {"autor": "Gabriel García Márquez", "ano": 1967},
+#     "1984": {"autor": "George Orwell", "ano": 1949},
+#     "Harry Potter e a Pedra Filosofal": {"autor": "J.K. Rowling", "ano": 1997},
+#     "O Senhor dos Anéis": {"autor": "J.R.R. Tolkien", "ano": 1954},
+#     "A Revolução dos Bichos": {"autor": "George Orwell", "ano": 1945},
+#     "O Apanhador no Campo de Centeio": {"autor": "J.D. Salinger", "ano": 1951},
+#     "O Código Da Vinci": {"autor": "Dan Brown", "ano": 2003},
+# }
+# livros_atualizados = {autor: 2025 - info["ano"]  for autor,info in catalogo.items()}
+# for x, y in livros_atualizados.items():
+#     print(f"{x} tem {y} anos")
+# usuarios = {
+#     "João": 25,
+#     "Maria": 17,
+#     "Ana": 19,
+#     "Carlos": 16,
+#     "Beatriz": 22,
+#     "Pedro": 15,
+#     "Luiza": 18
+# }
+# dicionario_adultos = {i[0]:"Adulto" 
+#     if i[1] >= 18 else "Menor" 
+#     for i in usuarios.items()}
+# for i in dicionario_adultos.items():
+#     print(i)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-    
-        
-
-
-
-    
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-    
-
-
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-                                                                                                             
-
-    
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-    
-
-
-
-   
-   
-
-
-
-
-
-
-
-
-    
-        
-
-    
-
-
-
-    
-    
-    
-    
-
-
-    
-    
 
 

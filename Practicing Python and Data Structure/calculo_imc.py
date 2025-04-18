@@ -1,7 +1,6 @@
 lista_de_tuplas = []
 lista_de_imc = []
 soma = 0
-
 atletas = [
     ["Maria Silva", 1.75, 65],
     ["João Santos", 1.80, 72],
@@ -29,13 +28,18 @@ for x in atletas:
     nome = x[0]
     altura = x[1]
     peso = x[2]
+    imc = round(peso / altura ** 2, 2)
     alturas = [i[1] for i in atletas]
     lista_de_tuplas.append((nome, altura, peso))
     lista_de_imc.append((nome,imc))
 
-maiores_imc = [i for i in lista_de_imc if i[1] > 23.5]
 media_alturas = round(sum(alturas) / len(lista_de_tuplas),2)
+maiores_imc = [i[0] for i in lista_de_imc if i[1] > 23.5]
+
+lista_obesos = [(i[0],'Obeso') if i[1] > 23 else (i[0],'Saudável') for i in lista_de_imc]
+
 
 print(f'As pessoas com o imc maior que 23.5 são:')
-for nome,imc in maiores_imc:
-    print(f'{nome}, IMC: {imc}')
+
+for nome, condicao in lista_obesos:
+    print(f'{nome} {condicao}')
