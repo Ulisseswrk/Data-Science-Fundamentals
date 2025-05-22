@@ -18,7 +18,7 @@ except ValueError: #Caso dê ValueError, printar a mensagem
 
         if cpf.isdigit() and len(cpf) == 11:
             cpf = [int(i) for i in cpf]
-             cpf = cpf.replace('-', '').replace('.', '')
+            cpf = cpf.replace('-', '').replace('.', '')
             break
         
 finally:
@@ -58,7 +58,6 @@ finally:
         print('CPF verídico ✅')
     else:
         print('CPF inválido ❌')
-        
         
 #Só a título de curiosidade, essa foi a primeira versão do código:
 
