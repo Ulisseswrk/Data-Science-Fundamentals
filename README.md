@@ -24,9 +24,9 @@ All exercises, notes, and references are kept inside their respective folders to
 - **Practicing Python and Data Structure**  
   Exercises about Data Sturcture, more specifically, all of the thing i learned on Pyhton For Data Science 2, just to train.
 
-- **Pandas I/O: Working with Multiple File Types** 
-  Exercises on reading and writing data with Pandas from a variety of sources, including CSV, Excel, JSON, HTML, and SQL with sqlalchemy. Emphasis on integrating structured data workflows in real-world Data Science contexts.
-
+- **Pandas I/O: Working with Multiple File Types**  
+  Exercises on reading and writing data with Pandas from a variety of sources, including CSV, Excel, JSON, HTML, and SQL with SQLAlchemy. Emphasis on integrating structured data workflows in real-world Data Science contexts.
+  
 ---
 
 ## 🧠 Purpose
