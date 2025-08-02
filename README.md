@@ -56,6 +56,7 @@ The main goals include:
 - NumPy
 - Visual Studio Code
 - Git & GitHub
+- Pandas
 
 ---
 
